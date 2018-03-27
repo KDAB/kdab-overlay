@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <use>
+        <flag name='printsupport'>Enable support for printing timesheets</flag>
+        <flag name='timesheettools'>Enable timesheet tools</flag>
+        <flag name='cisupport'>Enable CI support</flag>
+        <flag name='idledetection'>Enable automatic idle detection</flag>
+    </use>
+    <longdescription>Charm Cross-platform time-tracker</longdescription>
+</pkgmetadata>
