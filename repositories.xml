@@ -6,6 +6,6 @@
       <email>david.morgan@kdab.com</email>
       <name>Davee</name>
     </owner>
-    <source type="git">git@github.com:KDAB/kdab-overlay.git</source>
+    <source type="git">https://github.com/KDAB/kdab-overlay.git</source>
   </repo>
 </repositories>
