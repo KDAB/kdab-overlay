@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<longdescription>This project is a KDAB R&D effort to create a standalone GUI for performance data. As the first goal, we want to provide a UI like KCachegrind around Linux perf. Looking ahead, we intend to support various other performance data formats under this umbrella.</longdescription>
+</pkgmetadata>
