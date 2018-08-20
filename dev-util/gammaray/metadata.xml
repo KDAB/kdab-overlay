@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "http://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+    <use>
+        <flag name='qtlayout'>Install into Qt directory layout</flag>
+        <flag name='disablefeedback'>Disable user feedback support</flag>
+	<flag name='staticprobe'>Build the probe as static library for compile-time injection</flag>
+    </use>
+    <longdescription>GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent.</longdescription>
+</pkgmetadata>
