@@ -34,6 +34,7 @@ RDEPEND="
 	kde-frameworks/kio
 	kde-frameworks/solid
 	kde-frameworks/kwindowsystem
+	dev-util/perf
 	"
 
 DEPEND="${RDEPEND}"
