@@ -7,7 +7,7 @@
 Use eselect-repository to add the overlay:
 
 ```bash
-# eselect repository add kdab-boverlay git https://github.com/KDAB/kdab-overlay.git
+$ eselect repository add kdab-overlay git https://github.com/KDAB/kdab-overlay.git
 ```
 
 ## Get Involved
