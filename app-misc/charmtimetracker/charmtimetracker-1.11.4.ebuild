@@ -1,8 +1,8 @@
 # Copyright 1999-2018 Gentoo Foundation
 # Distributed under the terms of the GNU General Public License v2
 
-EAPI=6
-inherit cmake-utils
+EAPI=8
+inherit cmake
 
 RESTRICT="mirror"
 
@@ -40,9 +40,9 @@ src_configure() {
 		-DCHARM_IDLE_DETECTION="$(usex idledetection)"
 	)
 
-	cmake-utils_src_configure
+	cmake_src_configure
 }
 
 src_install() {
-	cmake-utils_src_install
+	cmake_src_install
 }
