@@ -37,6 +37,7 @@ RDEPEND="
 	>=kde-frameworks/kio-${KF_MIN}
 	>=kde-frameworks/solid-${KF_MIN}
 	>=kde-frameworks/kwindowsystem-${KF_MIN}
+	>=kde-frameworks/kparts-${KF_MIN}
 	dev-util/perf
 	dev-libs/kddockwidgets
 	"
