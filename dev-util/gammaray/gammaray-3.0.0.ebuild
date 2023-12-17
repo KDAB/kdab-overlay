@@ -20,7 +20,7 @@ LICENSE="BSD-2 GPL-2+ MIT"
 SLOT=0
 QT_MIN=5.5
 
-IUSE="3d bluetooth designer doc geolocation printsupport script scxml svg test qml wayland webengine qt6"
+IUSE="3d bluetooth designer doc geolocation printsupport script scxml svg test qml wayland webengine qt5"
 RESTRICT="!test? ( test )"
 
 # TODO: fix automagic sci-libs/vtk (and many other) dependencies
@@ -43,7 +43,7 @@ RDEPEND="
 	svg? ( >=dev-qt/qtsvg-${QT_MIN}:5 )
 	webengine? ( >=dev-qt/qtwebengine-${QT_MIN}:5[widgets] )
 	wayland? ( >=dev-qt/qtwayland-${QT_MIN}:5 )
-	qt6? ( dev-util/gammaray-probe-qt6 )
+	qt5? ( dev-util/gammaray-probe-qt5 )
 "
 
 DEPEND="${RDEPEND}
@@ -73,6 +73,7 @@ src_configure() {
 		$(cmake_use_find_package test Qt5Test)
 		$(cmake_use_find_package wayland Qt5WaylandCompositor)
 		$(cmake_use_find_package webengine Qt5WebEngineWidgets)
+		-DQT_VERSION_MAJOR=6
 		-DGAMMARAY_BUILD_DOCS=$(usex doc)
 		-DGAMMARAY_BUILD_UI=ON
 		-DGAMMARAY_DISABLE_FEEDBACK=ON

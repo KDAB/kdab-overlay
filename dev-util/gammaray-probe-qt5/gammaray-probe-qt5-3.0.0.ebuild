@@ -68,7 +68,7 @@ src_configure() {
 		$(cmake_use_find_package test Qt5Test)
 		$(cmake_use_find_package wayland Qt5WaylandCompositor)
 		$(cmake_use_find_package webengine Qt5WebEngineWidgets)
-		-DQT_VERSION_MAJOR=6
+		-DQT_VERSION_MAJOR=5
 		-DKDE_INSTALL_USE_QT_SYS_PATHS=ON
 		-DGAMMARAY_PROBE_ONLY_BUILD=ON
 		-DGAMMARAY_BUILD_UI=OFF
