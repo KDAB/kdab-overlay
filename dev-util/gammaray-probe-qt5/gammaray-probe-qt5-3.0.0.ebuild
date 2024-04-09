@@ -19,7 +19,7 @@ fi
 LICENSE="BSD-2 GPL-2+ MIT"
 SLOT=0
 
-IUSE="3d bluetooth designer doc geolocation printsupport script scxml svg test qml wayland webengine"
+IUSE="3d bluetooth designer doc geolocation script scxml svg test qml wayland webengine"
 RESTRICT="!test? ( test )"
 
 # TODO: fix automagic sci-libs/vtk (and many other) dependencies
@@ -35,7 +35,6 @@ RDEPEND="
 	bluetooth? ( dev-qt/qtbluetooth:5 )
 	designer? ( dev-qt/designer:5 )
 	geolocation? ( dev-qt/qtpositioning:5 )
-	printsupport? ( dev-qt/qtprintsupport:5 )
 	qml? ( dev-qt/qtdeclarative:5[widgets] )
 	script? ( dev-qt/qtscript:5[scripttools] )
 	scxml? ( dev-qt/qtscxml:5 )
@@ -57,7 +56,6 @@ src_configure() {
 		$(cmake_use_find_package bluetooth Qt5Bluetooth)
 		$(cmake_use_find_package designer Qt5Designer)
 		$(cmake_use_find_package geolocation Qt5Positioning)
-		$(cmake_use_find_package printsupport Qt5PrintSupport)
 		$(cmake_use_find_package qml Qt5Qml)
 		$(cmake_use_find_package qml Qt5Quick)
 		$(cmake_use_find_package qml Qt5QuickWidgets)
