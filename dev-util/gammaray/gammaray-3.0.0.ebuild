@@ -25,17 +25,17 @@ RESTRICT="!test? ( test )"
 
 # TODO: fix automagic sci-libs/vtk (and many other) dependencies
 RDEPEND="
-	>=dev-qt/qtbase-${QT_MIN}:6[gui,widgets,xml,network,concurrent]
+	>=dev-qt/qtbase-${QT_MIN}:6=[gui,widgets,xml,network,concurrent]
 	3d? ( >=dev-qt/qt3d-${QT_MIN}:6 )
 	bluetooth? ( >=dev-qt/qtconnectivity-${QT_MIN}:6[bluetooth] )
 	designer? ( >=dev-qt/designer-${QT_MIN}:5 )
 	geolocation? ( >=dev-qt/qtpositioning-${QT_MIN}:6 )
-	qml? ( >=dev-qt/qtdeclarative-${QT_MIN}:6[widgets] )
+	qml? ( >=dev-qt/qtdeclarative-${QT_MIN}:6=[widgets] )
 	scxml? ( >=dev-qt/qtscxml-${QT_MIN}:6 )
 	svg? ( >=dev-qt/qtsvg-${QT_MIN}:6 )
 	webengine? ( >=dev-qt/qtwebengine-${QT_MIN}:6[widgets] )
-	wayland? ( >=dev-qt/qtwayland-${QT_MIN}:6 )
-	qt5? ( dev-util/gammaray-probe-qt5 )
+	wayland? ( >=dev-qt/qtwayland-${QT_MIN}:6[compositor] )
+	qt5? ( =dev-util/gammaray-probe-qt5-${PV}:= )
 "
 
 DEPEND="${RDEPEND}
