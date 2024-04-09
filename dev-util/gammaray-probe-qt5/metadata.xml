@@ -7,8 +7,9 @@
         <flag name='qml'>Enable support for inspecting QtQuick scenes.</flag>
         <flag name='scxml'>Enable support for inspecting state machines from QtScxml.</flag>
         <flag name='webengine'>Enable support for the web inspector.</flag>
+        <flag name='script'>Enable QtScript debugging.</flag>
     </use>
-    <longdescription>GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent.</longdescription>
+    <longdescription>The GammaRay probe for Qt5.</longdescription>
     <upstream>
         <maintainer status="project">
             <email>info@kdab.com</email>
