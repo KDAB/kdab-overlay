@@ -1,17 +1,17 @@
-BDEPEND=>=dev-util/ninja-1.8.2 >=dev-util/cmake-3.20.5 test? ( x11-base/xorg-server[xvfb] x11-apps/xhost )
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 test? ( x11-base/xorg-server[xvfb] x11-apps/xhost )
 DEFINED_PHASES=compile configure install postinst postrm preinst prepare test
-DEPEND=dev-qt/qtcore:5 dev-qt/qtconcurrent:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 kde-frameworks/kitemmodels:5 3d? ( dev-qt/qt3d:5 ) bluetooth? ( dev-qt/qtbluetooth:5 ) designer? ( dev-qt/designer:5 ) geolocation? ( dev-qt/qtpositioning:5 ) printsupport? ( dev-qt/qtprintsupport:5 ) qml? ( dev-qt/qtdeclarative:5[widgets] ) script? ( dev-qt/qtscript:5[scripttools] ) scxml? ( dev-qt/qtscxml:5 ) svg? ( dev-qt/qtsvg:5 ) webengine? ( dev-qt/qtwebengine:5[widgets] ) wayland? ( dev-qt/qtwayland:5 ) test? ( dev-qt/qttest:5 )
+DEPEND=>=dev-qt/qtbase-6.0:6=[gui,widgets,xml,network,concurrent] 3d? ( >=dev-qt/qt3d-6.0:6 ) bluetooth? ( >=dev-qt/qtconnectivity-6.0:6[bluetooth] ) designer? ( >=dev-qt/designer-6.0:5 ) geolocation? ( >=dev-qt/qtpositioning-6.0:6 ) qml? ( >=dev-qt/qtdeclarative-6.0:6=[widgets] ) scxml? ( >=dev-qt/qtscxml-6.0:6 ) svg? ( >=dev-qt/qtsvg-6.0:6 ) webengine? ( >=dev-qt/qtwebengine-6.0:6[widgets] ) wayland? ( >=dev-qt/qtwayland-6.0:6[compositor] ) qt5? ( =dev-util/gammaray-probe-qt5-3.0.0:= ) test? ( dev-qt/qtbase-:6[test] )
 DESCRIPTION=GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent.
 EAPI=8
-HOMEPAGE=https://www.kdab.com/development-resources/qt-tools/gammaray/ https://github.com/KDAB/GammaRay
+HOMEPAGE=https://github.com/KDAB/GammaRay
 IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
 INHERIT=cmake optfeature virtualx xdg
-IUSE=3d bluetooth designer doc geolocation printsupport script scxml svg test qml wayland webengine test
+IUSE=3d bluetooth designer doc geolocation scxml svg test qml wayland webengine qt5 test
 KEYWORDS=~amd64
 LICENSE=BSD-2 GPL-2+ MIT
-RDEPEND=dev-qt/qtcore:5 dev-qt/qtconcurrent:5 dev-qt/qtgui:5 dev-qt/qtnetwork:5 dev-qt/qtwidgets:5 dev-qt/qtxml:5 kde-frameworks/kitemmodels:5 3d? ( dev-qt/qt3d:5 ) bluetooth? ( dev-qt/qtbluetooth:5 ) designer? ( dev-qt/designer:5 ) geolocation? ( dev-qt/qtpositioning:5 ) printsupport? ( dev-qt/qtprintsupport:5 ) qml? ( dev-qt/qtdeclarative:5[widgets] ) script? ( dev-qt/qtscript:5[scripttools] ) scxml? ( dev-qt/qtscxml:5 ) svg? ( dev-qt/qtsvg:5 ) webengine? ( dev-qt/qtwebengine:5[widgets] ) wayland? ( dev-qt/qtwayland:5 )
+RDEPEND=>=dev-qt/qtbase-6.0:6=[gui,widgets,xml,network,concurrent] 3d? ( >=dev-qt/qt3d-6.0:6 ) bluetooth? ( >=dev-qt/qtconnectivity-6.0:6[bluetooth] ) designer? ( >=dev-qt/designer-6.0:5 ) geolocation? ( >=dev-qt/qtpositioning-6.0:6 ) qml? ( >=dev-qt/qtdeclarative-6.0:6=[widgets] ) scxml? ( >=dev-qt/qtscxml-6.0:6 ) svg? ( >=dev-qt/qtsvg-6.0:6 ) webengine? ( >=dev-qt/qtwebengine-6.0:6[widgets] ) wayland? ( >=dev-qt/qtwayland-6.0:6[compositor] ) qt5? ( =dev-util/gammaray-probe-qt5-3.0.0:= )
 RESTRICT=!test? ( test ) !test? ( test )
 SLOT=0
 SRC_URI=https://github.com/KDAB/GammaRay/releases/download/v3.0.0/gammaray-3.0.0.tar.gz
-_eclasses_=toolchain-funcs	862d337d98edb576796827be2c6b11ca	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	be27a904c614cb93ae037762dc69bcc2	multiprocessing	b4e253ab22cef7b1085e9b67c7a3b730	ninja-utils	f3010c780f65d1bb5aea15a9af1adc9c	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	fc2f89084f590ac95c004ea95b0d2f80	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	virtualx	817571665ee28575da44ee08135089e5	xdg	4a14c5c24f121e7da66e5aab4a168c6e
-_md5_=2efc13b34ed2729ad4f0efd072ba7eeb
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	258a4691fd43b8cd5814cb1acbb3c7df	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	virtualx	817571665ee28575da44ee08135089e5	xdg	4a14c5c24f121e7da66e5aab4a168c6e
+_md5_=86170a2adc7166f5f5615a630cbf9a53
