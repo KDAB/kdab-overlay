@@ -1,0 +1,16 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5 test? ( x11-base/xorg-server[xvfb] x11-apps/xhost ) >=dev-vcs/git-1.8.2.1[curl]
+DEFINED_PHASES=compile configure install postinst postrm preinst prepare test unpack
+DEPEND=>=dev-qt/qtbase-6.0:6=[gui,widgets,xml,network,concurrent] 3d? ( >=dev-qt/qt3d-6.0:6 ) bluetooth? ( >=dev-qt/qtconnectivity-6.0:6[bluetooth] ) designer? ( >=dev-qt/designer-6.0:5 ) geolocation? ( >=dev-qt/qtpositioning-6.0:6 ) qml? ( >=dev-qt/qtdeclarative-6.0:6=[widgets] ) scxml? ( >=dev-qt/qtscxml-6.0:6 ) svg? ( >=dev-qt/qtsvg-6.0:6 ) webengine? ( >=dev-qt/qtwebengine-6.0:6[widgets] ) wayland? ( >=dev-qt/qtwayland-6.0:6[compositor] ) qt5? ( =dev-util/gammaray-probe-qt5-9999:= ) test? ( dev-qt/qtbase-:6[test] )
+DESCRIPTION=GammaRay is a tool to poke around in a Qt-application and also to manipulate the application to some extent.
+EAPI=8
+HOMEPAGE=https://github.com/KDAB/GammaRay
+IDEPEND=dev-util/desktop-file-utils x11-misc/shared-mime-info
+INHERIT=cmake optfeature virtualx xdg git-r3
+IUSE=3d bluetooth designer doc geolocation scxml svg test qml wayland webengine qt5 test
+LICENSE=BSD-2 GPL-2+ MIT
+PROPERTIES=live
+RDEPEND=>=dev-qt/qtbase-6.0:6=[gui,widgets,xml,network,concurrent] 3d? ( >=dev-qt/qt3d-6.0:6 ) bluetooth? ( >=dev-qt/qtconnectivity-6.0:6[bluetooth] ) designer? ( >=dev-qt/designer-6.0:5 ) geolocation? ( >=dev-qt/qtpositioning-6.0:6 ) qml? ( >=dev-qt/qtdeclarative-6.0:6=[widgets] ) scxml? ( >=dev-qt/qtscxml-6.0:6 ) svg? ( >=dev-qt/qtsvg-6.0:6 ) webengine? ( >=dev-qt/qtwebengine-6.0:6[widgets] ) wayland? ( >=dev-qt/qtwayland-6.0:6[compositor] ) qt5? ( =dev-util/gammaray-probe-qt5-9999:= )
+RESTRICT=!test? ( test ) !test? ( test )
+SLOT=0
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	258a4691fd43b8cd5814cb1acbb3c7df	optfeature	222cb475c5a4f7ae7cfb0bf510a6fe54	virtualx	817571665ee28575da44ee08135089e5	xdg	4a14c5c24f121e7da66e5aab4a168c6e	git-r3	875eb471682d3e1f18da124be97dcc81
+_md5_=86170a2adc7166f5f5615a630cbf9a53
