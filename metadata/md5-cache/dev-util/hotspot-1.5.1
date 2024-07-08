@@ -1,0 +1,15 @@
+BDEPEND=app-alternatives/ninja >=dev-build/cmake-3.20.5
+DEFINED_PHASES=compile configure install prepare test unpack
+DEPEND=>=dev-qt/qtbase-6.6.2:6=[network,widgets] virtual/libelf sys-devel/gettext sys-devel/binutils >=kde-frameworks/extra-cmake-modules-6.3.0 >=kde-frameworks/threadweaver-6.3.0 >=kde-frameworks/ki18n-6.3.0 >=kde-frameworks/kconfigwidgets-6.3.0 >=kde-frameworks/kcoreaddons-6.3.0 >=kde-frameworks/kitemviews-6.3.0 >=kde-frameworks/kitemmodels-6.3.0 >=kde-frameworks/kio-6.3.0 >=kde-frameworks/solid-6.3.0 >=kde-frameworks/kwindowsystem-6.3.0 >=kde-frameworks/kparts-6.3.0 dev-util/perf >=dev-libs/kddockwidgets-2.1.0
+DESCRIPTION=The Linux perf GUI for performance analysis.
+EAPI=8
+HOMEPAGE=https://github.com/KDAB/hotspot
+INHERIT=cmake
+KEYWORDS=~amd64 ~x86
+LICENSE=GPL-2
+RDEPEND=>=dev-qt/qtbase-6.6.2:6=[network,widgets] virtual/libelf sys-devel/gettext sys-devel/binutils >=kde-frameworks/extra-cmake-modules-6.3.0 >=kde-frameworks/threadweaver-6.3.0 >=kde-frameworks/ki18n-6.3.0 >=kde-frameworks/kconfigwidgets-6.3.0 >=kde-frameworks/kcoreaddons-6.3.0 >=kde-frameworks/kitemviews-6.3.0 >=kde-frameworks/kitemmodels-6.3.0 >=kde-frameworks/kio-6.3.0 >=kde-frameworks/solid-6.3.0 >=kde-frameworks/kwindowsystem-6.3.0 >=kde-frameworks/kparts-6.3.0 dev-util/perf >=dev-libs/kddockwidgets-2.1.0
+RESTRICT=mirror
+SLOT=0
+SRC_URI=https://github.com/KDAB/hotspot/releases/download/v1.5.1/hotspot-v1.5.1.tar.gz https://github.com/KDAB/hotspot/releases/download/v1.5.1/hotspot-perfparser-v1.5.1.tar.gz -> hotspot-v1.5.1-perfparser.tar.gz https://github.com/KDAB/hotspot/releases/download/v1.5.1/hotspot-PrefixTickLabels-v1.5.1.tar.gz -> hotspot-v1.5.1-PrefixTickLabels.tar.gz
+_eclasses_=toolchain-funcs	e56c7649b804f051623c8bc1a1c44084	multilib	c19072c3cd7ac5cb21de013f7e9832e0	flag-o-matic	e503ea5acc20410237ba33ec3f7c857d	multiprocessing	30ead54fa2e2b5f9cd4e612ffc34d0fe	ninja-utils	2df4e452cea39a9ec8fb543ce059f8d6	xdg-utils	baea6080dd821f5562d715887954c9d3	cmake	258a4691fd43b8cd5814cb1acbb3c7df
+_md5_=56eb452481fb5341cfbe9fbb8435cc9f
