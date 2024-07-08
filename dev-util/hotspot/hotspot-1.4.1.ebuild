@@ -39,7 +39,7 @@ RDEPEND="
 	>=kde-frameworks/kwindowsystem-${KF_MIN}
 	>=kde-frameworks/kparts-${KF_MIN}
 	dev-util/perf
-	dev-libs/kddockwidgets
+	<dev-libs/kddockwidgets-2.1.0
 	"
 
 DEPEND="${RDEPEND}"
