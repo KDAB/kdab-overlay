@@ -26,6 +26,7 @@ S="${WORKDIR}/KDDockWidgets-${PV}"
 src_configure() {
 	local mycmakeargs=(
 		-DKDDockWidgets_QT6=true
+		-DKDDockWidgets_NO_SPDLOG=ON
 	)
 	cmake_src_configure
 }
